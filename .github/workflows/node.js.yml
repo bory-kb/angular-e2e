@@ -22,8 +22,7 @@ jobs:
       with:
         node-version:  16.x 
         cache: 'npm'
-        cache-dependency-path: angular-e2e/package-lock.json
-        working-directory: ./angular-e2e
+        cache-dependency-path: .angular-e2e/package-lock.json
     - run: npm ci
     - run: npm run build
     - run: npm test
